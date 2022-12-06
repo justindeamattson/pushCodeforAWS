@@ -9,6 +9,9 @@ from trainer import Trainer
 import pandas as pd
 import matplotlib.pyplot as plt
 import pickle
+import torch.multiprocessing
+torch.multiprocessing.set_sharing_strategy('file_system')
+
 
 ##############################################################################################
 # TRAINING CONFIGURATIONS
