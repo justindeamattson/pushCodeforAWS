@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 import pickle
 import torch.multiprocessing
 torch.multiprocessing.set_sharing_strategy('file_system')
+#model_args.use_multiprocessing = False
+
 
 
 ##############################################################################################
@@ -92,11 +94,11 @@ def train_test_milestone(train_X, train_Y, val_X, val_Y):
     ##############################################################################################
     # MILESTONE TRAINING CONFIGURATIONS
     BATCH_SIZE = 32
-    EPOCHS = 4
+    EPOCHS = 1
     LR = 0.1
     GRAPH=False
     PRINT_PRETRAINING_ACC=False
-    USE_GPU=False
+    USE_GPU=True
     MODEL_PATH='milestone_ep{}.pt'.format(EPOCHS)
     
     input_dims = len(train_X.iloc[0])
