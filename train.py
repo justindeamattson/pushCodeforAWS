@@ -160,7 +160,23 @@ def enable_gpu():
     # this ensures that the current current PyTorch installation was built with MPS activated.
     #print(torch.backends.mps.is_built())
     print(torch.cuda.is_available())
+    print(torch.cpu.is_available())
+    print(torch.xpu.is_available())
+    print(torch.mkldnn.is_available())
+    print(torch.opengl.is_available())
+    print(torch.opencl.is_available())
+    print(torch.ideep.is_available())
+    print(torch.hip.is_available())
+    print(torch.ve.is_available())
+    print(torch.ort.is_available())
+    print(torch.mlc.is_available())
+    print(torch.xla.is_available())
+    print(torch.lazy.is_available())
+    print(torch.vulkan.is_available())
+    print(torch.meta.is_available())
+    print(torch.hpu.is_available())
 
+#cpu, cuda, xpu, mkldnn, opengl, opencl, ideep, hip, ve, ort, mlc, xla, lazy, vulkan, meta, hpu
     return torch.device("cuda:0")
     
 
