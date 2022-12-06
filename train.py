@@ -94,7 +94,7 @@ def train_test_milestone(train_X, train_Y, val_X, val_Y):
     ##############################################################################################
     # MILESTONE TRAINING CONFIGURATIONS
     BATCH_SIZE = 32
-    EPOCHS = 1
+    EPOCHS = 10
     LR = 0.1
     GRAPH=False
     PRINT_PRETRAINING_ACC=False
@@ -121,7 +121,7 @@ def train_test_milestone(train_X, train_Y, val_X, val_Y):
     val_dataloader = torch.utils.data.DataLoader(valset, batch_size=1, shuffle=True, num_workers=0)
     testset = VolleyballDataset("test")
     test_dataloader = torch.utils.data.DataLoader(testset, batch_size=1, shuffle=True, num_workers=0)
-    
+
 
     trainer = Trainer(model, train_dataloader, val_dataloader, test_dataloader, device)
     # Pretraining vals
