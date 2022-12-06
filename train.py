@@ -156,9 +156,9 @@ def plot_train_curve(train_accs, val_accs, losses):
 
 def enable_gpu():
     # this ensures that the current MacOS version is at least 12.3+
-    print(torch.backends.mps.is_available())
+    #print(torch.backends.mps.is_available())
     # this ensures that the current current PyTorch installation was built with MPS activated.
-    print(torch.backends.mps.is_built())
+    #print(torch.backends.mps.is_built())
     return torch.device("mps")
     
 
