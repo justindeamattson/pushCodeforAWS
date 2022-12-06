@@ -96,7 +96,7 @@ def train_test_milestone(train_X, train_Y, val_X, val_Y):
     LR = 0.1
     GRAPH=False
     PRINT_PRETRAINING_ACC=False
-    USE_GPU=True
+    USE_GPU=False
     MODEL_PATH='milestone_ep{}.pt'.format(EPOCHS)
     
     input_dims = len(train_X.iloc[0])
