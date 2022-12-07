@@ -94,7 +94,7 @@ def train_test_milestone(train_X, train_Y, val_X, val_Y):
     ##############################################################################################
     # MILESTONE TRAINING CONFIGURATIONS
     BATCH_SIZE = 32
-    EPOCHS = 10
+    EPOCHS = 25
     LR = 0.1
     GRAPH=False
     PRINT_PRETRAINING_ACC=False
